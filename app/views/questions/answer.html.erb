@@ -1,0 +1,13 @@
+<div class="chat-container">
+  <div class="message user-message">
+    <span class="sender">You:</span>
+    <span class="text"><%= @question %></span>
+  </div>
+
+  <div class="message coach-message">
+    <span class="sender">Coach:</span>
+    <span class="text"><%= @answer %></span>
+  </div>
+
+  <%= link_to "Ask another question", ask_path, class: "back-link" %>
+</div>
